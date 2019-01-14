@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar">
+
+            <ImageView
+                android:id="@+id/healthunitphoto"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="TODO"
+                android:scaleType="centerCrop"
+                android:transitionName="cpic" />
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/healthunitphoto"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:transitionName="cname" />
+
+            <TextView
+                android:id="@+id/district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="District"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:transitionName="cdistrict" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/district"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textSize="15sp"
+                android:transitionName="cprofile" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/orange_shade_shape"
+                android:minWidth="100dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                 />
+
+            <TextView
+                android:id="@+id/open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/distance"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/blue_shade_shape"
+                android:minWidth="100dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:transitionName="copen" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/bottom_bar_line"
+   android:orientation="horizontal"
+    android:padding="5dp"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/ev_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:ellipsize="end"
+
+        android:maxLines="1"
+        android:paddingEnd="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        tools:ignore="RelativeOverlap" />
+
+</LinearLayout>
+
+
+
+
+

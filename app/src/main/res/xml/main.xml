@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="Secure" android:summary="Add a lock code">
+
+    <EditTextPreference android:key="pin" android:summary="A pin you use to loack the app on exit" android:defaultValue="1">
+
+    </EditTextPreference>
+
+</PreferenceCategory>
+</PreferenceScreen>

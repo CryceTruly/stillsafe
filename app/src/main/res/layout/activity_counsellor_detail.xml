@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar" />
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="10dp"
+            app:cardElevation="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cpic"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="TODO"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/consellor"
+                    android:transitionName="cpic" />
+
+                <TextView
+
+                    android:id="@+id/cname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/cpic"
+                    android:paddingEnd="6dp"
+                    android:transitionName="cname"
+                    android:text="Mugarura Johnson"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:paddingRight="6dp" />
+
+
+                <TextView
+                    android:id="@+id/cprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:transitionName="cprofile"
+                    android:text="Hehehe this is one of the best counccillor bro,i mean am the best councillor anyway am going to fetch some information"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/messagebtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cprofile"
+                    android:padding="2dp"
+                    android:drawableRight="@drawable/ic_message"
+                    android:text="Message"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/blue_shade_shape"
+                    android:textSize="15sp" />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>
